@@ -456,25 +456,25 @@ section > h1 {
 }
 
 .house {
-  width: 10%;
-  height: 25%;
+  width: 5%;
+  height: 10%;
   padding: 0;
   margin-left: 40%;
   margin-top: 5%;
 }
 
 .car {
-  width: 20%;
-  height: 35%;
+  width: 10%;
+  height: 25%;
   padding: 0;
   float: right;
   margin-right: 5%;
-  margin-top: 25%;
+  margin-top: 15%;
 }
 
 .tree {
-  width: 20%;
-  height: 30%;
+  width: 10%;
+  height: 15%;
   padding: 0;
   margin-left: -2%;
 }
@@ -516,7 +516,7 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-1500px, 50px);
+    -webkit-transform: translate(-15000px, 50px);
     transform: translate(-15000px, 50px);
   }
 }
@@ -528,14 +528,14 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-1500px, 50px);
-    transform: translate(-1500px, 50px);
+    -webkit-transform: translate(-15000px, 50px);
+    transform: translate(-15000px, 50px);
   }
 }
 
 .car {
-  -webkit-animation: 20s car-move infinite alternate linear;
-  animation: 20s car-move  infinite alternate linear;
+  -webkit-animation: 10s car-move infinite alternate linear;
+  animation: 10s car-move  infinite alternate linear;
 }
 
 @-webkit-keyframes move {

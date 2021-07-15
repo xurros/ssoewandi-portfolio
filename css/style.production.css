@@ -247,7 +247,7 @@ a {
   border-collapse: separate;
   border-spacing: 25px 10px;
   padding: 2px;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 5%;
   table-layout: fixed;
 }
@@ -459,7 +459,7 @@ section > h1 {
   width: 5%;
   height: 10%;
   padding: 0;
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 5%;
 }
 
@@ -516,8 +516,8 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-15000px, 50px);
-    transform: translate(-15000px, 50px);
+    -webkit-transform: translate(-2800px, 50px);
+    transform: translate(-2800px, 50px);
   }
 }
 
@@ -528,17 +528,57 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-15000px, 50px);
-    transform: translate(-15000px, 50px);
+    -webkit-transform: translate(-2800px, 50px);
+    transform: translate(-2800px, 50px);
+  }
+}
+
+@-webkit-keyframes flip {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg);
+  }
+  50% {
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg);
+  }
+  100% {
+    left: 0;
+     -webkit-transform: rotateY(0deg);
+  }
+}
+
+@keyframes flip {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg);
+  }
+  50% {
+    left: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg);
+  }
+  98% {
+    -webkit-transform: rotateY(180deg);
+  }
+  100% {
+    left: 0;
+     -webkit-transform: rotateY(0deg);
   }
 }
 
 .car {
-  -webkit-animation: 10s car-move infinite alternate linear;
-  animation: 10s car-move  infinite alternate linear;
+  -webkit-animation: 15s car-move infinite alternate linear;
+  animation: 15s car-move  infinite alternate linear;
 }
 
-@-webkit-keyframes move {
+@-webkit-keyframes tree-move {
   from {
     transform: rotate(-6deg);
   }
@@ -548,7 +588,7 @@ section > h1 {
   }
 }
 
-@keyframes move {
+@keyframes tree-move {
   from {
     transform: rotate(-6deg);
   }
@@ -561,8 +601,8 @@ section > h1 {
 .tree {
   -webkit-transform-origin: bottom center;
   transform-origin: bottom center;
-  -webkit-animation: move 3.5s infinite alternate ease-in-out;
-  animation: move 3.5s infinite alternate ease-in-out;
+  -webkit-animation: tree-move 3.5s infinite alternate ease-in-out;
+  animation: tree-move 3.5s infinite alternate ease-in-out;
 }
 
 /* FOR SIGNUP FORM */

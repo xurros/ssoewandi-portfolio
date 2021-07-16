@@ -463,13 +463,22 @@ section > h1 {
   margin-top: 5%;
 }
 
-.car {
+.car1 {
   width: 10%;
   height: 25%;
   padding: 0;
   float: right;
-  margin-right: 5%;
+  margin-right: 0;
   margin-top: 15%;
+}
+
+.car2 {
+  width: 10%;
+  height: 25%;
+  padding: 0;
+  float: right;
+  margin-right: 0;
+  margin-top: 20%;
 }
 
 .tree {
@@ -533,49 +542,20 @@ section > h1 {
   }
 }
 
-@-webkit-keyframes flip {
-  0% {
-    left: 0;
-  }
-  48% {
-    -webkit-transform: rotateY(0deg);
-  }
-  50% {
-    left: calc(100% - 100px);
-    -webkit-transform: rotateY(180deg);
-  }
-  98% {
-    -webkit-transform: rotateY(180deg);
-  }
-  100% {
-    left: 0;
-     -webkit-transform: rotateY(0deg);
-  }
+.car1 {
+  -webkit-animation: 10s car-move infinite linear;
+  -moz-animation: car-move 10s infinite linear;
+  -o-animation: car-move 10s infinite linear;
+  animation: 10s car-move infinite linear;
+  animation-delay: -1s;
 }
 
-@keyframes flip {
-  0% {
-    left: 0;
-  }
-  48% {
-    -webkit-transform: rotateY(0deg);
-  }
-  50% {
-    left: calc(100% - 100px);
-    -webkit-transform: rotateY(180deg);
-  }
-  98% {
-    -webkit-transform: rotateY(180deg);
-  }
-  100% {
-    left: 0;
-     -webkit-transform: rotateY(0deg);
-  }
-}
-
-.car {
-  -webkit-animation: 15s car-move infinite alternate linear;
-  animation: 15s car-move  infinite alternate linear;
+.car2 {
+  -webkit-animation: 7s car-move infinite linear;
+  -moz-animation: car-move 7s infinite linear;
+  -o-animation: car-move 7s infinite linear;
+  animation: 7s car-move infinite linear;
+  animation-delay: -3s;
 }
 
 @-webkit-keyframes tree-move {

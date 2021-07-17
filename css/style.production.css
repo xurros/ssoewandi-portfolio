@@ -207,6 +207,7 @@ textarea {
 }
 
 .button,
+.button2,
 a {
   font-family: var(--yomogi);
   font-size: var(--font-third-size-);
@@ -218,7 +219,8 @@ a {
   transition: 0.8s opacity;
 }
 
-.button {
+.button,
+.button2 {
   display: inline-block;
   background: var(--button-background-color);
 

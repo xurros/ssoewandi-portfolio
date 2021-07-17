@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 :root {
-  --html-text-color: #1a1509;
+  --html-text-color: rgba(26, 21, 9, 1);
   --html-background-color: #ece9db;
   --hover-background-color: #aa9a5a;
   --hover-text-color: #655f54;
@@ -237,8 +237,8 @@ a {
 
 .button:hover,
 .button2:hover {
-  background-color: var(--hover-background-color);
-  opacity: 40%;
+  background-color: var(--input-background-color);
+  opacity: 60%;
   color: var(--html-text-color);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;

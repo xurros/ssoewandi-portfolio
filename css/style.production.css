@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 :root {
-  --html-text-color: rgba(26, 21, 9, 1);
+  --html-text-color: #1a1509;
   --html-background-color: #ece9db;
   --hover-background-color: #aa9a5a;
   --hover-text-color: #655f54;
@@ -66,6 +66,7 @@ nav ul li a {
   text-transform: uppercase;
   font-size: var(--font-third-size);
   letter-spacing: 0.2em;
+  overflow: hidden;
 }
 
 li:hover a:hover {
@@ -73,9 +74,74 @@ li:hover a:hover {
   opacity: 100%;
 }
 
+.logo {
+  padding: 10px;
+  float: left;
+  overflow: hidden;
+  margin-left: 10%;
+}
+
 .logo p {
   padding: 5px;
-  margin: -35px -2px;
+  overflow: hidden;
+  margin-left: 10%;
+  margin-top: -15%;
+}
+
+.mobile-nav {
+  display: none;
+  float: right;
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
+  -webkit-transition-property: background, color;
+  -moz-transition-property: background, color;
+  -o-transition-property: background, color;
+  transition-property: background, color; */
+}
+
+.mobile-nav:hover,
+.mobile-nav.active {
+  background: #fff;
+  color: #777;
+}
+
+.mobile-nav:active {
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 0 0 35px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.05) inset;
+}
+
+.mobile-nav {
+  width: 55px;
+  height: 55px;
+}
+
+.mobile-nav {
+  display: table;
+}
+
+.mobile-nav .fa {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 21px;
 }
 
 /* visited link */
@@ -207,7 +273,6 @@ textarea {
 }
 
 .button,
-.button2,
 a {
   font-family: var(--yomogi);
   font-size: var(--font-third-size-);
@@ -219,8 +284,7 @@ a {
   transition: 0.8s opacity;
 }
 
-.button,
-.button2 {
+.button {
   display: inline-block;
   background: var(--button-background-color);
 
@@ -237,8 +301,8 @@ a {
 
 .button:hover,
 .button2:hover {
-  background-color: var(--input-background-color);
-  opacity: 60%;
+  background-color: var(--hover-background-color);
+  opacity: 40%;
   color: var(--html-text-color);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
@@ -249,7 +313,7 @@ a {
   border-collapse: separate;
   border-spacing: 25px 10px;
   padding: 2px;
-  margin-left: 35%;
+  margin-left: 30%;
   margin-top: 5%;
   table-layout: fixed;
 }
@@ -324,11 +388,6 @@ a.active {
   color: var(--html-text-color);
   font-weight: var(--heavy-font);
   opacity: 100%;
-}
-
-.logo {
-  padding: 10px;
-  margin: 30px 220px;
 }
 
 .page-footer {
@@ -458,34 +517,25 @@ section > h1 {
 }
 
 .house {
-  width: 5%;
-  height: 10%;
+  width: 10%;
+  height: 35%;
   padding: 0;
-  margin-left: 45%;
+  margin-left: 40%;
   margin-top: 5%;
 }
 
-.car1 {
-  width: 10%;
-  height: 25%;
+.car {
+  width: 20%;
+  height: 35%;
   padding: 0;
   float: right;
-  margin-right: 0;
-  margin-top: 15%;
-}
-
-.car2 {
-  width: 10%;
-  height: 25%;
-  padding: 0;
-  float: right;
-  margin-right: 0;
-  margin-top: 20%;
+  margin-right: 5%;
+  margin-top: 25%;
 }
 
 .tree {
-  width: 10%;
-  height: 15%;
+  width: 20%;
+  height: 30%;
   padding: 0;
   margin-left: -2%;
 }
@@ -527,8 +577,8 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-2800px, 50px);
-    transform: translate(-2800px, 50px);
+    -webkit-transform: translate(-1500px, 50px);
+    transform: translate(-15000px, 50px);
   }
 }
 
@@ -539,28 +589,17 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-2800px, 50px);
-    transform: translate(-2800px, 50px);
+    -webkit-transform: translate(-1500px, 50px);
+    transform: translate(-1500px, 50px);
   }
 }
 
-.car1 {
-  -webkit-animation: 10s car-move infinite linear;
-  -moz-animation: car-move 10s infinite linear;
-  -o-animation: car-move 10s infinite linear;
-  animation: 10s car-move infinite linear;
-  animation-delay: -1s;
+.car {
+  -webkit-animation: 20s car-move infinite alternate linear;
+  animation: 20s car-move  infinite alternate linear;
 }
 
-.car2 {
-  -webkit-animation: 7s car-move infinite linear;
-  -moz-animation: car-move 7s infinite linear;
-  -o-animation: car-move 7s infinite linear;
-  animation: 7s car-move infinite linear;
-  animation-delay: -3s;
-}
-
-@-webkit-keyframes tree-move {
+@-webkit-keyframes move {
   from {
     transform: rotate(-6deg);
   }
@@ -570,7 +609,7 @@ section > h1 {
   }
 }
 
-@keyframes tree-move {
+@keyframes move {
   from {
     transform: rotate(-6deg);
   }
@@ -583,8 +622,8 @@ section > h1 {
 .tree {
   -webkit-transform-origin: bottom center;
   transform-origin: bottom center;
-  -webkit-animation: tree-move 3.5s infinite alternate ease-in-out;
-  animation: tree-move 3.5s infinite alternate ease-in-out;
+  -webkit-animation: move 3.5s infinite alternate ease-in-out;
+  animation: move 3.5s infinite alternate ease-in-out;
 }
 
 /* FOR SIGNUP FORM */
@@ -726,4 +765,11 @@ input[type="submit"]:hover {
   form {
     max-width: 80%;
   }
+}
+
+@media only screen and (max-width: 1366px) {
+
+    #menu ul li {
+        margin-left: 25px;
+    }
 }

@@ -768,8 +768,7 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 1366px) {
-
-    #menu ul li {
-        margin-left: 25px;
-    }
+  #menu ul li {
+    margin-left: 25px;
+  }
 }

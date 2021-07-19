@@ -771,4 +771,11 @@ input[type="submit"]:hover {
   #menu ul li {
     margin-left: 25px;
   }
+
+  .aboutme,
+  td {
+    margin-left: 80px;
+    width: 100%;
+    float: left;
+  }
 }

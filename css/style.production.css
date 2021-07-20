@@ -247,11 +247,11 @@ a {
 
 .aboutme {
   border-collapse: separate;
-  border-spacing: 40%;
+  border-spacing: 20px;
   padding: 5%;
   margin-left: 35%;
-  margin-top: 5%;
-  table-layout: relative;
+  margin-top: 10%;
+  table-layout: auto;
   max-width: 50%;
 }
 
@@ -740,5 +740,29 @@ input[type="submit"]:hover {
     margin-left: 80px;
     width: 100%;
     float: left;
+  }
+
+  .column-left {
+    margin-left: -40%;
+    width: 100%;
+  }
+
+  .column-left .contact {
+    margin-left: 30%;
+    width: 100%;
+  }
+
+  .column-right {
+    margin-right: -10%;
+    width: 100%;
+  }
+
+  .address p h1 {
+    margin-right: -400px;
+    width: 100%;
+  }
+
+  .navigation-list__item > a {
+    margin-right: 400px;
   }
 }

@@ -677,6 +677,11 @@ input[type="text"] {
   width:250px;
 } */
 
+iframe {
+  margin-right: 600px;
+  margin-top: 40px;
+}
+
 input[type="submit"] {
   border: none;
   font-weight: bold;

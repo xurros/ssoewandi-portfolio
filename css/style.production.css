@@ -313,8 +313,8 @@ td {
 .navigation-list__item {
   text-decoration: none;
 }
-/*
-.navigation-list li {
+
+/*  .navigation-list li {
   display: inline-block;
   padding: 10px;
   margin: 20px 50px;
@@ -730,11 +730,6 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
-  /* .mobile-nav .fa-bars a {
-    float: none;
-    width: 100%;
-  } */
-
   .aboutme,
   td {
     margin-left: 80px;
@@ -771,11 +766,4 @@ input[type="submit"]:hover {
     margin-right: -400px;
     width: 100%;
   }
-
-  /* .mobile-nav i {
-    float: left;
-    margin-left: -600px;
-    margin-top: 60px;
-    cursor: pointer;
-  } */
 }

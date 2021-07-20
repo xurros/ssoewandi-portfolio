@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 
 :root {
-  --html-text-color: #1a1509;
+  --html-text-color: rgba(26, 21, 9, 1);
   --html-background-color: #ece9db;
   --hover-background-color: #aa9a5a;
   --hover-text-color: #655f54;
@@ -66,7 +66,6 @@ nav ul li a {
   text-transform: uppercase;
   font-size: var(--font-third-size);
   letter-spacing: 0.2em;
-  overflow: hidden;
 }
 
 li:hover a:hover {
@@ -74,74 +73,9 @@ li:hover a:hover {
   opacity: 100%;
 }
 
-.logo {
-  padding: 10px;
-  float: left;
-  overflow: hidden;
-  margin-left: 10%;
-}
-
 .logo p {
   padding: 5px;
-  overflow: hidden;
-  margin-left: 10%;
-  margin-top: -15%;
-}
-
-.mobile-nav {
-  display: none;
-  float: right;
-  vertical-align: middle;
-  font-size: 11px;
-  font-weight: 400;
-  text-transform: uppercase;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  cursor: pointer;
-
-  /* -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);
-  -webkit-transition-property: background, color;
-  -moz-transition-property: background, color;
-  -o-transition-property: background, color;
-  transition-property: background, color; */
-}
-
-.mobile-nav:hover,
-.mobile-nav.active {
-  background: #fff;
-  color: #777;
-}
-
-.mobile-nav:active {
-  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.05) inset;
-  -moz-box-shadow: 0 0 35px rgba(0, 0, 0, 0.05) inset;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.05) inset;
-}
-
-.mobile-nav {
-  width: 55px;
-  height: 55px;
-}
-
-.mobile-nav {
-  display: table;
-}
-
-.mobile-nav .fa {
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 21px;
+  margin: -35px -2px;
 }
 
 /* visited link */
@@ -273,6 +207,7 @@ textarea {
 }
 
 .button,
+.button2,
 a {
   font-family: var(--yomogi);
   font-size: var(--font-third-size-);
@@ -284,7 +219,8 @@ a {
   transition: 0.8s opacity;
 }
 
-.button {
+.button,
+.button2 {
   display: inline-block;
   background: var(--button-background-color);
 
@@ -301,8 +237,8 @@ a {
 
 .button:hover,
 .button2:hover {
-  background-color: var(--hover-background-color);
-  opacity: 40%;
+  background-color: var(--input-background-color);
+  opacity: 60%;
   color: var(--html-text-color);
   -webkit-transition: 0.8s opacity;
   -o-transition: 0.8s opacity;
@@ -311,15 +247,16 @@ a {
 
 .aboutme {
   border-collapse: separate;
-  border-spacing: 25px 10px;
-  padding: 2px;
-  margin-left: 30%;
-  margin-top: 5%;
-  table-layout: fixed;
+  border-spacing: 20px;
+  padding: 5%;
+  margin-left: 35%;
+  margin-top: 10%;
+  table-layout: auto;
+  max-width: 50%;
 }
 
 .aboutme td {
-  border: 0.3px solid white;
+  border: 0.5px solid white;
 
   /* background-color:#ECCED0; */
   background-color: var(--aboutme-background-color_pink);
@@ -388,6 +325,11 @@ a.active {
   color: var(--html-text-color);
   font-weight: var(--heavy-font);
   opacity: 100%;
+}
+
+.logo {
+  padding: 10px;
+  margin: 30px 220px;
 }
 
 .page-footer {
@@ -517,57 +459,36 @@ section > h1 {
 }
 
 .house {
-  width: 10%;
-  height: 35%;
+  width: 5%;
+  height: 10%;
   padding: 0;
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 5%;
 }
 
-.car {
-  width: 20%;
-  height: 35%;
+.car1 {
+  width: 10%;
+  height: 25%;
   padding: 0;
   float: right;
-  margin-right: 5%;
-  margin-top: 25%;
+  margin-right: 0;
+  margin-top: 15%;
+}
+
+.car2 {
+  width: 10%;
+  height: 25%;
+  padding: 0;
+  float: right;
+  margin-right: 0;
+  margin-top: 20%;
 }
 
 .tree {
-  width: 20%;
-  height: 30%;
+  width: 10%;
+  height: 15%;
   padding: 0;
   margin-left: -2%;
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: var(--font-third-size);
-    font-weight: var(--light-font);
-  }
 }
 
 @-webkit-keyframes car-move {
@@ -577,8 +498,8 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-1500px, 50px);
-    transform: translate(-15000px, 50px);
+    -webkit-transform: translate(-2800px, 50px);
+    transform: translate(-2800px, 50px);
   }
 }
 
@@ -589,17 +510,28 @@ section > h1 {
   }
 
   to {
-    -webkit-transform: translate(-1500px, 50px);
-    transform: translate(-1500px, 50px);
+    -webkit-transform: translate(-2800px, 50px);
+    transform: translate(-2800px, 50px);
   }
 }
 
-.car {
-  -webkit-animation: 20s car-move infinite alternate linear;
-  animation: 20s car-move  infinite alternate linear;
+.car1 {
+  -webkit-animation: 10s car-move infinite linear;
+  -moz-animation: car-move 10s infinite linear;
+  -o-animation: car-move 10s infinite linear;
+  animation: 10s car-move infinite linear;
+  animation-delay: -1s;
 }
 
-@-webkit-keyframes move {
+.car2 {
+  -webkit-animation: 7s car-move infinite linear;
+  -moz-animation: car-move 7s infinite linear;
+  -o-animation: car-move 7s infinite linear;
+  animation: 7s car-move infinite linear;
+  animation-delay: -3s;
+}
+
+@-webkit-keyframes tree-move {
   from {
     transform: rotate(-6deg);
   }
@@ -609,7 +541,7 @@ section > h1 {
   }
 }
 
-@keyframes move {
+@keyframes tree-move {
   from {
     transform: rotate(-6deg);
   }
@@ -622,8 +554,8 @@ section > h1 {
 .tree {
   -webkit-transform-origin: bottom center;
   transform-origin: bottom center;
-  -webkit-animation: move 3.5s infinite alternate ease-in-out;
-  animation: move 3.5s infinite alternate ease-in-out;
+  -webkit-animation: tree-move 3.5s infinite alternate ease-in-out;
+  animation: tree-move 3.5s infinite alternate ease-in-out;
 }
 
 /* FOR SIGNUP FORM */
@@ -767,9 +699,40 @@ input[type="submit"]:hover {
   }
 }
 
-@media only screen and (max-width: 1366px) {
-  #menu ul li {
-    margin-left: 25px;
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: var(--font-third-size);
+    font-weight: var(--light-font);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-nav .fa-bars a {
+    float: none;
+    width: 100%;
   }
 
   .aboutme,
@@ -777,5 +740,29 @@ input[type="submit"]:hover {
     margin-left: 80px;
     width: 100%;
     float: left;
+  }
+
+  .column-left {
+    margin-left: -40%;
+    width: 100%;
+  }
+
+  .column-left .contact {
+    margin-left: 30%;
+    width: 100%;
+  }
+
+  .column-right {
+    margin-right: -10%;
+    width: 100%;
+  }
+
+  .address p h1 {
+    margin-right: -400px;
+    width: 100%;
+  }
+
+  .navigation-list__item > a {
+    margin-right: 400px;
   }
 }

@@ -313,13 +313,13 @@ td {
 .navigation-list__item {
   text-decoration: none;
 }
-
+/*
 .navigation-list li {
   display: inline-block;
   padding: 10px;
   margin: 20px 50px;
   cursor: pointer;
-}
+} */
 
 a.active {
   color: var(--html-text-color);
@@ -730,10 +730,10 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .mobile-nav .fa-bars a {
+  /* .mobile-nav .fa-bars a {
     float: none;
     width: 100%;
-  }
+  } */
 
   .aboutme,
   td {
@@ -747,8 +747,13 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
-  .column-left .contact {
-    margin-left: 30%;
+  .contact p {
+    margin-left: 160px;
+    width: 100%;
+  }
+
+  .contact h1 {
+    margin-left: -155px;
     width: 100%;
   }
 
@@ -757,12 +762,20 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
-  .address p h1 {
+  label,
+  .standard-label {
+    float: left;
+  }
+
+  .address p {
     margin-right: -400px;
     width: 100%;
   }
 
-  .navigation-list__item > a {
-    margin-right: 400px;
-  }
+  /* .mobile-nav i {
+    float: left;
+    margin-left: -600px;
+    margin-top: 60px;
+    cursor: pointer;
+  } */
 }
